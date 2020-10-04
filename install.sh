@@ -1,5 +1,7 @@
 #!/bin/bash
-test=`ls`
-for loop in ${test}; do
+env=~/Desktop 
+test=`ls ${env}`
+for loop in ${test}; 
+do
     echo $loop
 done
