@@ -8,5 +8,5 @@
 
 ## Compile yourself
 >* First
->>*Make sure the pipenv was installed on your system.
+>>* Make sure the pipenv was installed on your system.
 
