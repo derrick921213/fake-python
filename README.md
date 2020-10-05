@@ -7,6 +7,7 @@
 * Just remove this program folder.
 
 ## Compile yourself
->* First
->>* Make sure the pipenv was installed on your system.
+>1.第一步
+>>1.1 Make sure the pipenv was installed on your system.
+
 
