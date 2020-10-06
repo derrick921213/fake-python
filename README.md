@@ -4,7 +4,7 @@
 * For windows, run **install.cmd** to install this program.
 
 ## Uninstall
-* Just remove this program folder.
+* Just remove this program folder
 
 ## Compile yourself
 >1.第一步
