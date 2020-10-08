@@ -11,7 +11,10 @@
 2. Step two  
     1. Open terminal, then change this program directory.  
 
-    2. Then copy this command ``` pipenv --python 3.8 install ``` to terminal.  
+    2. Then copy this command ``` pipenv --python 3.8 install ``` on terminal.
+    3. If the process finished successfully, then you type ``` pipenv shell ```, after type ``` pyinstaller -F -n control_server main.py ```
+    4. you should learn **How to use <a href="https://www.coderbridge.com/@WeiHaoEric/0b2ced0696cc4c38a62d7b26fa7bbea0">pyinstaller</a>**
+3.  
     
 
 
