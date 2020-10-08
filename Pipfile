@@ -12,6 +12,7 @@ python-socketio = {extras = ["asyncio_client"], version = "*"}
 requests = "*"
 requests2 = "*"
 paramiko = "*"
+pyinstaller = "*"
 
 [requires]
 python_version = "3.8"
