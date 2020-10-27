@@ -1,6 +1,7 @@
 # *_Use the python to control server_*
 ## Install
 * For linux and mac, run <a href="./install.sh">**install.sh**</a> to install this program.
+* For windows, in cmder type ``` sh install.sh ``` then it can install.  
 
 ## Uninstall
 * Just remove this program folder
