@@ -32,4 +32,6 @@ except Exception as e:
 '''
 import os
 def install():
-    os.system("sh install/install.sh")
+    os.system("sh commands/install.sh")
+def test():
+    os.system("sh commands/test.sh")    
