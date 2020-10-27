@@ -12,7 +12,7 @@ folder=pycontroler #設定安裝資料夾名稱
 system=`uname`
 #-----------------設定結束------------------#
 
-#-----------------辨識系統------------------#
+echo "#-----------------辨識系統------------------#"
 if [ ${system} = "Darwin" ]
     then
         echo "MacOS"
@@ -22,7 +22,16 @@ if [ ${system} = "Darwin" ]
     else
         echo "Windows"
 fi
-#-----------------辨識結束------------------#
+echo "#-----------------辨識結束------------------#"
+
+#-----------------開始安裝------------------#
+cd ${env}
+exites=`test -d ${folder}`
+if [ ${exites} ]
+mkdir ${folder}
+cd ${env}/${folder}
+ls 
+#-----------------安裝結束------------------#
 #cd ${env}
 #mkdir pycontroler
 #test=`ls ${env}`
