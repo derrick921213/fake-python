@@ -1,8 +1,8 @@
-import paramiko
+'''import paramiko
 host = '192.168.210.130'
 user = 'derrick'
 pw = '0170'
-'''def connect():
+def connect():
     try:
         ssh_client = paramiko.SSHClient()
         ssh_client.load_system_host_keys()
@@ -15,7 +15,7 @@ pw = '0170'
         #print(''.join(std_out.readlines()))    
         ssh_client.close()
     except Exception as e:
-        print (e)'''
+        print (e)
 try:
     ssh_client = paramiko.SSHClient()
     ssh_client.load_system_host_keys()
@@ -29,3 +29,7 @@ try:
     ssh_client.close()
 except Exception as e:
     print (e)
+'''
+import os
+def install():
+    os.system("sh install/install.sh")
