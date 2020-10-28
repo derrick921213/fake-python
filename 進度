@@ -1,0 +1,9 @@
+setup.py finished.
+uninstall.sh finished.
+
+
+main.py add (install uninstall help) and command.py add (install function,uninstall function).
+use pyinstaller pack this main.py and setup.py finished.
+
+
+README.md must change install zoon
