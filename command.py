@@ -32,4 +32,8 @@ except Exception as e:
 '''
 import os
 def install():
-    os.system("sh commands/install.sh")  
+    os.system("sh commands/install.sh")
+    print("Install SUCCESS")
+def uninstall():
+    os.system("sh commands/uninstall.sh")    
+    print("Uninstall SUCCESS")

@@ -15,7 +15,7 @@ s = input('test:')
 pre(s)
 '''
 import sys
-from command import install
+from command import install,uninstall
 cmd = ['--install','--uninstall','--help']
 out=" "
 try:
@@ -24,7 +24,7 @@ try:
         if one == '--install':
             install()
         elif one == '--uninstall':
-            print('uninstall')
+            uninstall()
         else:
             out = out.join(cmd)
             print("Argvs: " + out)
