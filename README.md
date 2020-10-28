@@ -7,7 +7,7 @@
 - Git
 
 ## Install
-* For linux and mac, run ``` pycontroler --install``` to install this program.
+* For linux and mac, change directory to **bin** run ``` pycontroler --install``` to install this program.
 * For windows, in cmder type ``` pycontroler.exe --install ``` then it can install.  
 
 ## Uninstall
