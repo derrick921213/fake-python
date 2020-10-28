@@ -26,11 +26,16 @@ echo "#-----------------辨識結束------------------#"
 
 #-----------------開始安裝------------------#
 cd ${env}
-exites=`test -d ${folder}`
-if [ ${exites} ]
-mkdir ${folder}
+exites=`test -d ${folder} && echo "exist" || echo "Not exist"`
+if [[ ${exites} = "Not exist" ]]
+    then
+        mkdir ${folder}
+    else
+        echo "${folder} exist!!"
+fi            
 cd ${env}/${folder}
-ls 
+ls
+cp -r ..install-done ${env}/${folder}
 #-----------------安裝結束------------------#
 #cd ${env}
 #mkdir pycontroler
