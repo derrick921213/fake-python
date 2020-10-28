@@ -9,6 +9,7 @@
 #-----------------設定變數------------------#
 env=~/Documents #設定安裝目錄
 folder=pycontroler #設定安裝資料夾名稱
+download=~/Downloads
 system=`uname`
 #-----------------設定結束------------------#
 
@@ -16,7 +17,7 @@ echo "#-----------------辨識系統------------------#"
 if [ ${system} = "Darwin" ]
     then
         echo "MacOS"
-    elif [ ${system} = "Linux" ]
+    elif [ ${system} = "Linux" ] 
         then
             echo "Linux"
     else
@@ -24,7 +25,7 @@ if [ ${system} = "Darwin" ]
 fi
 echo "#-----------------辨識結束------------------#"
 
-#-----------------開始安裝------------------#
+echo "#-----------------開始安裝------------------#"
 cd ${env}
 exites=`test -d ${folder} && echo "exist" || echo "Not exist"`
 if [[ ${exites} = "Not exist" ]]
@@ -32,11 +33,13 @@ if [[ ${exites} = "Not exist" ]]
         mkdir ${folder}
     else
         echo "${folder} exist!!"
-fi            
-cd ${env}/${folder}
+fi
+cd ${download}
+svn checkout https://github.com/derrick921213/fake-python/trunk/install-done            
+mv install-done ${env}/${folder}
+cd ${env}/${folder}/install-done
 ls
-cp -r ..install-done ${env}/${folder}
-#-----------------安裝結束------------------#
+echo "#-----------------安裝結束------------------#"
 #cd ${env}
 #mkdir pycontroler
 #test=`ls ${env}`
