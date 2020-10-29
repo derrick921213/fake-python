@@ -1,12 +1,13 @@
 import os,platform as p
 system = p.system()
 if (system == 'Darwin'):
-    print('MacOS')
+    print('--------Download Mac install file--------')
+    os.system("svn checkout https://github.com/derrick921213/fake-python/trunk/done/mac;cd dist;svn checkout https://github.com/derrick921213/fake-python/trunk/commands")
+    print('--------Download fisished--------')
 elif (system == 'Linux'):
-    print('Linux')
+    print('--------Download Linux install file--------')
+    os.system("svn checkout https://github.com/derrick921213/fake-python/trunk/done/linux;cd dist;svn checkout https://github.com/derrick921213/fake-python/trunk/commands")
+    print('--------Download fisished--------')
 else:
     print('This app only support Mac and Linux')        
 
-#print('--------Download install file--------')
-#os.system("svn checkout https://github.com/derrick921213/fake-python/trunk/dist;cd dist;svn checkout https://github.com/derrick921213/fake-python/trunk/commands")
-#print('--------Download fisished--------')
