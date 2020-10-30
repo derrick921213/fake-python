@@ -14,6 +14,7 @@ download=~/Downloads
 system=`uname`
 #-----------------設定結束------------------#
 
+#-----------------辨識系統------------------#
 echo "#-----------------辨識系統------------------#"
 if [ ${system} = "Darwin" ]
     then
@@ -25,7 +26,9 @@ if [ ${system} = "Darwin" ]
         echo "Windows"
 fi
 echo "#-----------------辨識結束------------------#"
+#-----------------辨識結束------------------#
 
+#-----------------開始安裝------------------#
 echo "#-----------------開始安裝------------------#"
 cd ${env}
 exites=`test -d ${folder} && echo "exist" || echo "Not exist"`
@@ -46,10 +49,4 @@ rm -rf ${env}/${folder}/install-done
 cd ${env}/${folder}
 ls
 echo "#-----------------安裝結束------------------#"
-#cd ${env}
-#mkdir pycontroler
-#test=`ls ${env}`
-#for loop in ${test}; 
-#do
-#    echo $loop
-#done
+#-----------------安裝結束------------------#
