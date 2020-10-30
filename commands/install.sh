@@ -9,7 +9,7 @@
 #-----------------設定變數------------------#
 env=~/Documents #設定安裝目錄
 folder=pycontroler #設定安裝資料夾名稱
-move=${env}/${folder}/install-done
+move=${env}/${folder}/install-done/*
 download=~/Downloads
 system=`uname`
 #-----------------設定結束------------------#
