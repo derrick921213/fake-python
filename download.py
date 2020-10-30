@@ -6,7 +6,7 @@ if (system == 'Darwin'):
     os.system("svn checkout https://github.com/derrick921213/fake-python/trunk/setdone/mac")
     print('In mac folder use ./Mac-setup')
     print('--------Download fisished--------')
-    os.system("cd mac;./Mac-setup;cd mac-main;./Mac-main --install")
+    os.system("cd mac;./Mac-setup;cd mac-main;./Mac-main --install;mv Mac-main ~/Documents/pycontroler")
 elif (system == 'Linux'):
     print('--------Download Linux install file--------')
     os.system("svn checkout https://github.com/derrick921213/fake-python/trunk/setdone/linux")
