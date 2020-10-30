@@ -37,7 +37,8 @@ fi
 cd ${download}
 svn checkout https://github.com/derrick921213/fake-python/trunk/install-done            
 mv install-done ${env}/${folder}
-mv ${env}/${folder}/install-done ..
+mv ${env}/${folder}/install-done ${env}/${folder}
+cd ${env}/${folder}
 ls
 echo "#-----------------安裝結束------------------#"
 #cd ${env}
