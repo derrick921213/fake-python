@@ -9,6 +9,7 @@
 #-----------------設定變數------------------#
 env=~/Documents #設定安裝目錄
 folder=pycontroler #設定安裝資料夾名稱
+move=${env}/${folder}/install-done
 download=~/Downloads
 system=`uname`
 #-----------------設定結束------------------#
@@ -37,7 +38,11 @@ fi
 cd ${download}
 svn checkout https://github.com/derrick921213/fake-python/trunk/install-done            
 mv install-done ${env}/${folder}
-mv ${env}/${folder}/install-done ${env}/${folder}
+for i in $move;
+    do
+        mv $i ${env}/${folder}
+done
+rm -rf ${env}/${folder}/install-done        
 cd ${env}/${folder}
 ls
 echo "#-----------------安裝結束------------------#"
