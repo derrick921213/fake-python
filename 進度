@@ -1,10 +1,12 @@
+# Finished
+
 setup.py finished.
 uninstall.sh finished.
+install.sh done.
 
+# 做了一半
 main.py add (install uninstall help) and command.py add (install function,uninstall function).
 use pyinstaller pack this main.py and setup.py finished.
 
-
+# 要修改的地方
 README.md must change install zoon
-
-install.sh must change
