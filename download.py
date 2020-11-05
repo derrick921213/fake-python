@@ -15,3 +15,5 @@ elif (system == 'Linux'):
     os.system("cd linux;./Linux-setup;cd linux-main;./Linux-main --install;cd ..;mv linux-main ~/Documents/pycontroler")
 else:
     print('This app only support Mac and Linux')
+
+    
