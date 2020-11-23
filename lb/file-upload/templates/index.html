@@ -9,6 +9,10 @@
             {% if message in messages %}
                 {% for message in messages %}
                     <p>{{message}}</p>
-                    
+                {% endfor %}    
+            {% endif %}
+        {% endwith %}
+        <h3>Welecome</h3> 
+        <a href="{{url_for('login')}}">Login</a>
     </body>
 </html>
