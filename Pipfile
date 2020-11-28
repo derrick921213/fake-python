@@ -15,6 +15,7 @@ requests2 = "*"
 paramiko = "*"
 pyinstaller = "*"
 flask-socketio = "*"
+pymysql = "*"
 
 [requires]
 python_version = "3.8"
