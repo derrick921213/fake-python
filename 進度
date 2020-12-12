@@ -10,3 +10,12 @@ use pyinstaller pack this main.py and setup.py finished.
 
 # 要修改的地方
 README.md must change install zoon
+
+
+
+
+Linux user add and delete command:
+    add:
+        adduser <username>
+    delete:
+        userdel -rf <username>    
